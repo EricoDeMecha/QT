@@ -10,8 +10,8 @@ void  db_connection::connect_db()
     QSqlDatabase db = QSqlDatabase::addDatabase("QMYSQL");
     db.setHostName("127.0.0.1");
     db.setPort(3308);
-    db.setUserName("root");
-    db.setPassword("root");
+    db.setUserName("<username>");// add your username for your database
+    db.setPassword("<password>");//add your password 
 
     if(db.open())
     {
@@ -25,7 +25,7 @@ void  db_connection::connect_db()
 
 void db_connection::execute_query(QString  squery)
 {
-    QString command_dbname = "USE school";
+    QString command_dbname = "USE school";// change <school> to your database name
     QSqlQuery _query(command_dbname);
     if(_query.exec())
     {
