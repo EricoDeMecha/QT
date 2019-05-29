@@ -12,13 +12,14 @@ git clone "https://github.com/EricoDeMecha/QT.git"
 ```
 
 ## Usage
+# Example
 Bankie_ project
 ```C++ Qt
  QString command = "SELECT name FROM my_val;";
  QString command = "SELECT _password FROM my_val;";
  QString command ="INSERT INTO my_val VALUES('"+name+"','"+_pass+"','"+date_time+"','"+choice+"');";
 ```
-#make sure to edit the commands to suit your database names
+# make sure to edit the commands to suit your database names
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
